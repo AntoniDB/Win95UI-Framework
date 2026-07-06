@@ -1,0 +1,30 @@
+.w95-startmenu {
+  position: absolute; bottom: 30px; left: 2px; z-index: 95;
+  display: flex;
+  background: var(--w95-silver);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-light),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-highlight);
+  animation: w95-startmenu-slide 120ms steps(4);
+  transform-origin: bottom left;
+}
+@keyframes w95-startmenu-slide {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+.w95-startmenu__band {
+  width: 24px;
+  background: linear-gradient(180deg, var(--w95-navy-light), var(--w95-navy));
+  color: var(--w95-white);
+  font-weight: 700;
+  font-size: var(--w95-font-lg);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: flex; align-items: center; justify-content: flex-start;
+  padding: 8px 0;
+  margin: 3px 0 3px 3px;
+}
+.w95-startmenu__menu { box-shadow: none; min-width: 180px; }
+.w95-startmenu .w95-menu__item { padding-top: 6px; padding-bottom: 6px; }

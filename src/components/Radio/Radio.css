@@ -1,0 +1,22 @@
+.w95-radio { display: inline-flex; align-items: center; gap: 6px; position: relative; cursor: default; user-select: none; }
+.w95-radio__input { position: absolute; opacity: 0; width: 12px; height: 12px; margin: 0; }
+.w95-radio__circle {
+  width: 12px; height: 12px; flex: 0 0 12px;
+  border-radius: 50%;
+  background: var(--w95-white);
+  border-top: 1px solid var(--w95-button-shadow);
+  border-left: 1px solid var(--w95-button-shadow);
+  border-bottom: 1px solid var(--w95-button-highlight);
+  border-right: 1px solid var(--w95-button-highlight);
+  box-shadow: inset 1px 1px 0 var(--w95-inset), inset -1px -1px 0 var(--w95-button-light);
+  position: relative;
+}
+.w95-radio__input:checked + .w95-radio__circle::after {
+  content: '';
+  position: absolute; top: 3px; left: 3px; width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--w95-black);
+}
+.w95-radio__input:disabled + .w95-radio__circle { background: var(--w95-silver); }
+.w95-radio__input:disabled ~ .w95-radio__label { color: var(--w95-gray); text-shadow: 1px 1px 0 var(--w95-button-highlight); }
+.w95-radio__input:focus-visible ~ .w95-radio__label { outline: 1px dotted var(--w95-black); }

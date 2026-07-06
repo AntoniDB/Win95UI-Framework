@@ -1,0 +1,18 @@
+.w95-textfield { display: inline-flex; flex-direction: column; gap: 3px; vertical-align: top; }
+.w95-textfield--full { display: flex; width: 100%; }
+.w95-textfield__label { color: var(--w95-black); }
+.w95-textfield__input {
+  background: var(--w95-white);
+  color: var(--w95-black);
+  border: 0;
+  padding: 3px 5px;
+  min-height: 21px;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-inset);
+}
+.w95-textfield__input:focus { outline: none; }
+.w95-textfield__input:disabled { background: var(--w95-silver); color: var(--w95-gray); }
+.w95-textfield__error { color: #AA0000; font-size: var(--w95-font-sm); }

@@ -1,0 +1,117 @@
+/* ============ Win95UI base ============ */
+:root, .w95-root {
+  --w95-silver: #C0C0C0;
+  --w95-white: #FFFFFF;
+  --w95-black: #000000;
+  --w95-navy: #000080;
+  --w95-navy-light: #1084D0;
+  --w95-gray: #808080;
+  --w95-dark-gray: #404040;
+  --w95-button-face: #DFDFDF;
+  --w95-button-highlight: #FFFFFF;
+  --w95-button-shadow: #808080;
+  --w95-button-dark-shadow: #000000;
+  --w95-button-light: #DFDFDF;
+  --w95-inset: #000000;
+  --w95-highlight: #000080;
+  --w95-highlight-text: #FFFFFF;
+  --w95-desktop: #008080;
+  --w95-tooltip-bg: #FFFFE1;
+  --w95-font-family: "Pixelated MS Sans Serif", "MS Sans Serif", "Tahoma", Arial, sans-serif;
+  --w95-font-sm: 11px;
+  --w95-font-md: 13px;
+  --w95-font-lg: 16px;
+}
+
+.w95-root, .w95-root * {
+  box-sizing: border-box;
+  font-family: var(--w95-font-family);
+  font-size: var(--w95-font-md);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  image-rendering: pixelated;
+  border-radius: 0;
+}
+
+/* ---- 3D bevel system (2px, hard edges, no anti-aliasing) ---- */
+/* Raised (button at rest) */
+.w95-raised {
+  border: 0;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-highlight),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-light);
+}
+/* Pressed / active */
+.w95-pressed {
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-dark-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-button-shadow);
+}
+/* Sunken field (inputs) */
+.w95-sunken {
+  border: 0;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-inset);
+}
+/* Window frame: outer raised + inner edge */
+.w95-window-frame {
+  background: var(--w95-silver);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-light),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-highlight);
+}
+/* Thin raised (status bar cells, separators) */
+.w95-groove {
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow);
+}
+
+/* Dotted focus rectangle, drawn inside like Win95 */
+.w95-focusable:focus-visible {
+  outline: 1px dotted var(--w95-black);
+  outline-offset: -5px;
+}
+
+/* Win95 scrollbars (WebKit) */
+.w95-root ::-webkit-scrollbar { width: 16px; height: 16px; }
+.w95-root ::-webkit-scrollbar-track {
+  background-image: repeating-conic-gradient(var(--w95-silver) 0% 25%, var(--w95-white) 0% 50%);
+  background-size: 2px 2px;
+}
+.w95-root ::-webkit-scrollbar-thumb {
+  background: var(--w95-silver);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-highlight),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-light);
+}
+.w95-root ::-webkit-scrollbar-button {
+  background: var(--w95-silver);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-highlight),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-light);
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .w95-root *, .w95-root *::before, .w95-root *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,15 @@
+export const menuClasses = {
+  menu: 'w95-menu',
+  item: 'w95-menu__item',
+  itemDisabled: 'w95-menu__item--disabled',
+  icon: 'w95-menu__icon',
+  label: 'w95-menu__label',
+  shortcut: 'w95-menu__shortcut',
+  submenuArrow: 'w95-menu__arrow',
+  separator: 'w95-menu__separator',
+  submenu: 'w95-menu__submenu',
+  bar: 'w95-menubar',
+  barItem: 'w95-menubar__item',
+  barItemOpen: 'w95-menubar__item--open',
+  barPopup: 'w95-menubar__popup',
+} as const;

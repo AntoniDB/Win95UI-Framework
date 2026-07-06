@@ -1,0 +1,19 @@
+.w95-listview {
+  list-style: none; margin: 0; padding: 2px;
+  background: var(--w95-white);
+  overflow: auto;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-inset);
+}
+.w95-listview__item {
+  display: flex; align-items: center; gap: 6px;
+  padding: 2px 4px; cursor: default; user-select: none;
+  color: var(--w95-black);
+}
+.w95-listview__item--selected { background: var(--w95-highlight); color: var(--w95-highlight-text); }
+.w95-listview__item--disabled { color: var(--w95-gray); }
+.w95-listview__item:focus-visible { outline: 1px dotted var(--w95-black); outline-offset: -1px; }
+.w95-listview__icon { width: 16px; display: inline-flex; justify-content: center; }

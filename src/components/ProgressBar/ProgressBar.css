@@ -1,0 +1,19 @@
+.w95-progress {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 20px; padding: 3px; width: 200px;
+  background: var(--w95-silver);
+  position: relative;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-inset);
+}
+.w95-progress__blocks { display: flex; gap: 2px; height: 100%; width: 100%; overflow: hidden; }
+.w95-progress__block { flex: 1 0 auto; width: 8px; background: var(--w95-navy); }
+.w95-progress__label {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: var(--w95-font-sm);
+  mix-blend-mode: difference; color: var(--w95-white);
+}

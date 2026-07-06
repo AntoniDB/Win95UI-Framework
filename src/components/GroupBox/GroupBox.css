@@ -1,0 +1,16 @@
+.w95-groupbox {
+  margin: 0; padding: 12px 10px 10px;
+  border: 0;
+  background: var(--w95-silver);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow),
+    -1px -1px 0 var(--w95-button-shadow),
+    1px 1px 0 var(--w95-button-highlight);
+  position: relative;
+}
+.w95-groupbox__legend {
+  padding: 0 4px;
+  background: var(--w95-silver);
+  font-size: var(--w95-font-md);
+}

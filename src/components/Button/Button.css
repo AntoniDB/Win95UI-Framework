@@ -1,0 +1,36 @@
+.w95-button {
+  min-width: 75px;
+  min-height: 23px;
+  padding: 0 12px;
+  background: var(--w95-silver);
+  color: var(--w95-black);
+  border: 0;
+  user-select: none;
+  cursor: default;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-highlight),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-light);
+}
+.w95-button:active:not(:disabled), .w95-button--active {
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-dark-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-button-shadow);
+  padding-top: 2px;
+}
+.w95-button--primary {
+  box-shadow:
+    0 0 0 1px var(--w95-black),
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-highlight),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-light);
+}
+.w95-button:disabled {
+  color: var(--w95-gray);
+  text-shadow: 1px 1px 0 var(--w95-button-highlight);
+}
+.w95-button--full { width: 100%; }

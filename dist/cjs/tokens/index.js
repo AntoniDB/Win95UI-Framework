@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.borders = exports.spacing = exports.typography = exports.colors = void 0;
+var colors_1 = require("./colors");
+Object.defineProperty(exports, "colors", { enumerable: true, get: function () { return colors_1.colors; } });
+var typography_1 = require("./typography");
+Object.defineProperty(exports, "typography", { enumerable: true, get: function () { return typography_1.typography; } });
+var spacing_1 = require("./spacing");
+Object.defineProperty(exports, "spacing", { enumerable: true, get: function () { return spacing_1.spacing; } });
+Object.defineProperty(exports, "borders", { enumerable: true, get: function () { return spacing_1.borders; } });

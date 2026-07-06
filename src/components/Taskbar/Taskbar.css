@@ -1,0 +1,21 @@
+.w95-taskbar {
+  display: flex; align-items: center; gap: 4px;
+  height: 28px; padding: 2px 2px;
+  background: var(--w95-silver);
+  box-shadow: inset 0 1px 0 var(--w95-button-highlight), inset 0 2px 0 var(--w95-button-light);
+}
+.w95-taskbar--fixed { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; }
+.w95-taskbar__start {
+  display: inline-flex; align-items: center; gap: 4px;
+  min-width: 0; min-height: 0; height: 22px; padding: 0 6px;
+  font-weight: 700;
+}
+.w95-taskbar__items { display: flex; gap: 3px; flex: 1; overflow: hidden; }
+.w95-taskbar__clock {
+  display: inline-flex; align-items: center;
+  height: 22px; padding: 0 8px;
+  font-size: var(--w95-font-sm);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow);
+}

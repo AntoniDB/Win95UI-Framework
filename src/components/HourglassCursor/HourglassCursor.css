@@ -1,0 +1,7 @@
+.w95-hourglass { display: inline-flex; align-items: center; gap: 8px; cursor: wait; }
+.w95-hourglass__glyph { display: inline-flex; animation: w95-hourglass-flip 1.2s steps(2) infinite; }
+@keyframes w95-hourglass-flip {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.w95-hourglass__label { font-size: var(--w95-font-sm); }

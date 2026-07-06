@@ -1,0 +1,28 @@
+.w95-tree {
+  list-style: none; margin: 0; padding: 4px;
+  background: var(--w95-white);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-inset);
+}
+.w95-tree__children { list-style: none; margin: 0; padding-left: 18px; border-left: 1px dotted var(--w95-gray); }
+.w95-tree__row {
+  display: flex; align-items: center; gap: 4px;
+  padding: 1px 2px; cursor: default; user-select: none;
+}
+.w95-tree__row--selected > .w95-tree__label,
+.w95-tree__row--selected { background: transparent; }
+.w95-tree__row--selected .w95-tree__text { background: var(--w95-highlight); color: var(--w95-highlight-text); }
+.w95-tree__toggle {
+  width: 11px; height: 11px; flex: 0 0 11px;
+  border: 1px solid var(--w95-gray);
+  background: var(--w95-white);
+  color: var(--w95-black);
+  font-size: 9px; line-height: 9px;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0; cursor: default;
+}
+.w95-tree__spacer { width: 11px; flex: 0 0 11px; }
+.w95-tree__row:focus-visible { outline: 1px dotted var(--w95-black); }

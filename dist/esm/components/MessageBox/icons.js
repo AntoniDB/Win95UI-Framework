@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+/** Hand-drawn pixel-style SVG icons (32x32), no external icon sets. */
+const px = { shapeRendering: 'crispEdges' };
+export const messageBoxIcons = {
+    info: (_jsxs("svg", { viewBox: "0 0 32 32", width: "32", height: "32", style: px, "aria-hidden": "true", children: [_jsx("circle", { cx: "16", cy: "16", r: "14", fill: "#FFFFFF", stroke: "#000000", strokeWidth: "2" }), _jsx("rect", { x: "14", y: "8", width: "4", height: "4", fill: "#000080" }), _jsx("rect", { x: "14", y: "14", width: "4", height: "10", fill: "#000080" })] })),
+    warning: (_jsxs("svg", { viewBox: "0 0 32 32", width: "32", height: "32", style: px, "aria-hidden": "true", children: [_jsx("polygon", { points: "16,2 30,29 2,29", fill: "#FFFF00", stroke: "#000000", strokeWidth: "2" }), _jsx("rect", { x: "14", y: "10", width: "4", height: "10", fill: "#000000" }), _jsx("rect", { x: "14", y: "23", width: "4", height: "4", fill: "#000000" })] })),
+    error: (_jsxs("svg", { viewBox: "0 0 32 32", width: "32", height: "32", style: px, "aria-hidden": "true", children: [_jsx("circle", { cx: "16", cy: "16", r: "14", fill: "#FF0000", stroke: "#800000", strokeWidth: "2" }), _jsx("rect", { x: "9", y: "14", width: "14", height: "4", fill: "#FFFFFF", transform: "rotate(45 16 16)" }), _jsx("rect", { x: "9", y: "14", width: "14", height: "4", fill: "#FFFFFF", transform: "rotate(-45 16 16)" })] })),
+    question: (_jsxs("svg", { viewBox: "0 0 32 32", width: "32", height: "32", style: px, "aria-hidden": "true", children: [_jsx("circle", { cx: "16", cy: "16", r: "14", fill: "#FFFFFF", stroke: "#000000", strokeWidth: "2" }), _jsx("path", { d: "M11 12 q0-6 5-6 q5 0 5 5 q0 3-3 4 q-2 1-2 4", fill: "none", stroke: "#000080", strokeWidth: "3" }), _jsx("rect", { x: "14", y: "22", width: "4", height: "4", fill: "#000080" })] })),
+};

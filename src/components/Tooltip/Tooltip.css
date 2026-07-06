@@ -1,0 +1,13 @@
+.w95-tooltip { position: relative; display: inline-block; }
+.w95-tooltip__bubble {
+  position: absolute; left: 0; z-index: 50;
+  background: var(--w95-tooltip-bg);
+  color: var(--w95-black);
+  border: 1px solid var(--w95-black);
+  padding: 2px 5px;
+  font-size: var(--w95-font-sm);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.w95-tooltip__bubble--bottom { top: calc(100% + 4px); }
+.w95-tooltip__bubble--top { bottom: calc(100% + 4px); }

@@ -1,0 +1,34 @@
+/* Rectangular Win95-style toggle: sunken track, 3D sliding block. No iOS pills. */
+.w95-switch { display: inline-flex; align-items: center; gap: 6px; position: relative; user-select: none; cursor: default; }
+.w95-switch__input { position: absolute; opacity: 0; width: 40px; height: 18px; margin: 0; }
+.w95-switch__track {
+  width: 40px; height: 18px; flex: 0 0 40px;
+  background: var(--w95-silver);
+  position: relative;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow),
+    inset -2px -2px 0 var(--w95-button-light),
+    inset 2px 2px 0 var(--w95-inset);
+}
+.w95-switch__side {
+  position: absolute; top: 2px; bottom: 2px; width: 18px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: var(--w95-font-sm); color: var(--w95-gray);
+}
+.w95-switch__side--off { left: 2px; }
+.w95-switch__side--on { right: 2px; }
+.w95-switch__thumb {
+  position: absolute; top: 2px; left: 2px; width: 18px; height: 14px;
+  background: var(--w95-silver);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-highlight),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-light);
+}
+.w95-switch__input:checked + .w95-switch__track .w95-switch__thumb { left: 20px; }
+.w95-switch__input:checked + .w95-switch__track .w95-switch__side--on { color: var(--w95-black); font-weight: 700; }
+.w95-switch__input:not(:checked) + .w95-switch__track .w95-switch__side--off { color: var(--w95-black); font-weight: 700; }
+.w95-switch__input:disabled ~ .w95-switch__label { color: var(--w95-gray); }
+.w95-switch__input:focus-visible + .w95-switch__track { outline: 1px dotted var(--w95-black); outline-offset: 2px; }

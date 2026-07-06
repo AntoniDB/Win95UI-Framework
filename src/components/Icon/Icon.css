@@ -1,0 +1,12 @@
+.w95-icon {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 4px;
+  width: 74px; padding: 4px; user-select: none; cursor: default;
+}
+.w95-icon__image { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; }
+.w95-icon__label {
+  font-size: var(--w95-font-sm); text-align: center; padding: 0 2px;
+  color: var(--w95-black); word-break: break-word;
+}
+.w95-icon--desktop .w95-icon__label { color: var(--w95-white); }
+.w95-icon__label--selected { background: var(--w95-highlight); color: var(--w95-highlight-text) !important; outline: 1px dotted var(--w95-white); }
+.w95-icon:focus-visible { outline: 1px dotted var(--w95-black); }

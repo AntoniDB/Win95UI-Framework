@@ -1,0 +1,8 @@
+.w95-msgbox__overlay {
+  position: fixed; inset: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: center;
+}
+.w95-msgbox__content { display: flex; gap: 12px; padding: 8px 8px 0; align-items: flex-start; }
+.w95-msgbox__icon { width: 32px; height: 32px; flex: 0 0 32px; }
+.w95-msgbox__text { min-width: 180px; max-width: 360px; padding-top: 6px; }
+.w95-msgbox__buttons { display: flex; justify-content: center; gap: 6px; padding: 14px 8px 10px; }

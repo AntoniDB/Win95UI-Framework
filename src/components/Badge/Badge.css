@@ -1,0 +1,21 @@
+.w95-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 1px 6px;
+  background: var(--w95-silver);
+  font-size: var(--w95-font-sm);
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-dark-shadow),
+    inset 1px 1px 0 var(--w95-button-highlight),
+    inset -2px -2px 0 var(--w95-button-shadow),
+    inset 2px 2px 0 var(--w95-button-light);
+}
+.w95-badge--sunken {
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow);
+}
+.w95-badge__delete {
+  border: 0; background: transparent; padding: 0 1px;
+  font-size: var(--w95-font-sm); line-height: 1; cursor: default;
+}
+.w95-badge__delete:hover { color: var(--w95-navy); }

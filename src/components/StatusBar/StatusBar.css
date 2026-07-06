@@ -1,0 +1,15 @@
+.w95-statusbar {
+  display: flex; gap: 3px;
+  padding: 2px;
+  background: var(--w95-silver);
+}
+.w95-statusbar__panel {
+  display: inline-flex; align-items: center;
+  padding: 2px 8px; min-height: 18px;
+  font-size: var(--w95-font-sm);
+  flex: 1;
+  box-shadow:
+    inset -1px -1px 0 var(--w95-button-highlight),
+    inset 1px 1px 0 var(--w95-button-shadow);
+}
+.w95-statusbar__panel:last-child { flex: 0 0 auto; }
