@@ -7,12 +7,12 @@ A Windows 95-inspired UI component library for React.
 
 ## Preview
 
-![Button](./assets/button_componentui.png)
-![MessageBox](./assets/messagebox_code_componentui.png)
-![ProgressBar](./assets/progressbar_componentui.png)
-![Select](./assets/select_componentui.png)
-![Tabs](./assets/tabs_componentui.png)
-![TextField](./assets/textfield_componentui.png)
+![Button](https://github.com/AntoniDB/Win95UI-Framework/blob/master/Assets/button_componentui.png)
+![MessageBox](https://github.com/AntoniDB/Win95UI-Framework/blob/master/Assets/messagebox_code_componentui.png)
+![ProgressBar](https://github.com/AntoniDB/Win95UI-Framework/blob/master/Assets/progressbar_componentui.png)
+![Select](https://github.com/AntoniDB/Win95UI-Framework/blob/master/Assets/select_componentui.png)
+![Tabs](https://github.com/AntoniDB/Win95UI-Framework/blob/master/Assets/tabs_componentui.png)
+![TextField](https://github.com/AntoniDB/Win95UI-Framework/blob/master/Assets/textfield_componentui.png)
 
 ## Installation
 
