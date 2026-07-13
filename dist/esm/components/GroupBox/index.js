@@ -1,1 +1,1 @@
-export { GroupBox } from './GroupBox';
+export { GroupBox } from './GroupBox.js';

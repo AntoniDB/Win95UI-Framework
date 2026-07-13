@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useState } from 'react';
-import { cx } from '../../utils';
-import { treeClasses as c } from './TreeView.styles';
+import { cx } from '../../utils.js';
+import { treeClasses as c } from './TreeView.styles.js';
 function TreeItem({ node, onSelect, selectedId, }) {
     const [expanded, setExpanded] = useState(node.defaultExpanded ?? false);
     const hasChildren = !!node.children?.length;

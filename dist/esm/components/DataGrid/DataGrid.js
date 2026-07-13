@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useMemo, useState } from 'react';
-import { cx } from '../../utils';
-import { dataGridClasses as c } from './DataGrid.styles';
+import { cx } from '../../utils.js';
+import { dataGridClasses as c } from './DataGrid.styles.js';
 function DataGridInner({ columns, rows, rowKey, onRowClick, selectedKey, height, className, style, ...rest }, ref) {
     const [sortKey, setSortKey] = useState(null);
     const [sortDir, setSortDir] = useState('asc');

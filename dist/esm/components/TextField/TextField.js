@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useId } from 'react';
-import { cx } from '../../utils';
-import { textFieldClasses as c } from './TextField.styles';
+import { cx } from '../../utils.js';
+import { textFieldClasses as c } from './TextField.styles.js';
 export const TextField = forwardRef(function TextField(props, ref) {
     const { label, error, fullWidth = false, className, style, id: idProp, ...rest } = props;
     const autoId = useId();

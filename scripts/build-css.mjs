@@ -1,7 +1,8 @@
 // Concatenates base.css + every component CSS into dist/styles.css
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
-const root = new URL('..', import.meta.url).pathname;
+import { fileURLToPath } from 'node:url';
+const root = fileURLToPath(new URL('..', import.meta.url));
 const out = [];
 out.push(readFileSync(join(root, 'src/base.css'), 'utf8'));
 const compDir = join(root, 'src/components');

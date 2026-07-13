@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef } from 'react';
-import { cx } from '../../utils';
-import { progressClasses as c } from './ProgressBar.styles';
+import { cx } from '../../utils.js';
+import { progressClasses as c } from './ProgressBar.styles.js';
 const TOTAL_BLOCKS = 18;
 export const ProgressBar = forwardRef(function ProgressBar({ value, showLabel = false, width, className, style, ...rest }, ref) {
     const clamped = Math.max(0, Math.min(100, value));

@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useId } from 'react';
-import { cx } from '../../utils';
-import { radioClasses as c } from './Radio.styles';
+import { cx } from '../../utils.js';
+import { radioClasses as c } from './Radio.styles.js';
 export const Radio = forwardRef(function Radio({ label, className, style, id: idProp, ...rest }, ref) {
     const autoId = useId();
     const id = idProp ?? `w95-radio-${autoId}`;

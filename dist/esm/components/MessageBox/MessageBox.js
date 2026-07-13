@@ -1,10 +1,10 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useEffect, useRef } from 'react';
-import { Window } from '../Window';
-import { Button } from '../Button';
-import { cx } from '../../utils';
-import { messageBoxClasses as c } from './MessageBox.styles';
-import { messageBoxIcons } from './icons';
+import { Window } from '../Window/index.js';
+import { Button } from '../Button/index.js';
+import { cx } from '../../utils.js';
+import { messageBoxClasses as c } from './MessageBox.styles.js';
+import { messageBoxIcons } from './icons.js';
 export const MessageBox = forwardRef(function MessageBox({ open, title, children, icon = 'info', buttons = ['OK'], onAction, onClose, className, style }, ref) {
     const firstBtn = useRef(null);
     useEffect(() => {

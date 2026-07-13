@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useState } from 'react';
-import { cx } from '../../utils';
-import { listViewClasses as c } from './ListView.styles';
+import { cx } from '../../utils.js';
+import { listViewClasses as c } from './ListView.styles.js';
 export const ListView = forwardRef(function ListView({ items, selectedId, defaultSelectedId, onSelect, height, className, style, ...rest }, ref) {
     const [internal, setInternal] = useState(defaultSelectedId);
     const selected = selectedId ?? internal;

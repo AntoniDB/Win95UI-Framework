@@ -1,8 +1,8 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useEffect } from 'react';
-import { Menu } from '../Menu';
-import { cx } from '../../utils';
-import { startMenuClasses as c } from './StartMenu.styles';
+import { Menu } from '../Menu/index.js';
+import { cx } from '../../utils.js';
+import { startMenuClasses as c } from './StartMenu.styles.js';
 export const StartMenu = forwardRef(function StartMenu({ open, items, onSelect, onClose, brand = 'Windows 95', className, ...rest }, ref) {
     useEffect(() => {
         if (!open)

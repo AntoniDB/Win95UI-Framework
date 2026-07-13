@@ -1,1 +1,1 @@
-export { Window } from './Window';
+export { Window } from './Window.js';

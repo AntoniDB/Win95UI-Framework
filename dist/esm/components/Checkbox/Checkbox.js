@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useId } from 'react';
-import { cx } from '../../utils';
-import { checkboxClasses as c } from './Checkbox.styles';
+import { cx } from '../../utils.js';
+import { checkboxClasses as c } from './Checkbox.styles.js';
 export const Checkbox = forwardRef(function Checkbox({ label, className, style, id: idProp, ...rest }, ref) {
     const autoId = useId();
     const id = idProp ?? `w95-cb-${autoId}`;

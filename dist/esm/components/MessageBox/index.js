@@ -1,2 +1,2 @@
-export { MessageBox } from './MessageBox';
-export { messageBoxIcons } from './icons';
+export { MessageBox } from './MessageBox.js';
+export { messageBoxIcons } from './icons.js';

@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useCallback, useRef, useState } from 'react';
-import { cx } from '../../utils';
-import { windowClasses as c } from './Window.styles';
+import { cx } from '../../utils.js';
+import { windowClasses as c } from './Window.styles.js';
 export const Window = forwardRef(function Window({ title, icon, active = true, minimizable = false, maximizable = false, closable = false, onMinimize, onMaximize, onClose, draggable95 = false, width, height, className, style, children, ...rest }, ref) {
     const [offset, setOffset] = useState({ x: 0, y: 0 });
     const dragState = useRef(null);

@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useId } from 'react';
-import { cx } from '../../utils';
-import { selectClasses as c } from './Select.styles';
+import { cx } from '../../utils.js';
+import { selectClasses as c } from './Select.styles.js';
 export const Select = forwardRef(function Select({ label, options, fullWidth = false, className, style, id: idProp, children, ...rest }, ref) {
     const autoId = useId();
     const id = idProp ?? `w95-sel-${autoId}`;

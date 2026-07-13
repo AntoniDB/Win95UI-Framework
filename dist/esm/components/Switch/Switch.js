@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useId } from 'react';
-import { cx } from '../../utils';
-import { switchClasses as c } from './Switch.styles';
+import { cx } from '../../utils.js';
+import { switchClasses as c } from './Switch.styles.js';
 export const Switch = forwardRef(function Switch({ label, onLabel = 'I', offLabel = 'O', className, style, id: idProp, ...rest }, ref) {
     const autoId = useId();
     const id = idProp ?? `w95-switch-${autoId}`;

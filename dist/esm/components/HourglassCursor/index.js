@@ -1,1 +1,1 @@
-export { HourglassCursor } from './HourglassCursor';
+export { HourglassCursor } from './HourglassCursor.js';

@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useId, useState } from 'react';
-import { cx } from '../../utils';
-import { tooltipClasses as c } from './Tooltip.styles';
+import { cx } from '../../utils.js';
+import { tooltipClasses as c } from './Tooltip.styles.js';
 export const Tooltip = forwardRef(function Tooltip({ content, children, placement = 'bottom', className, ...rest }, ref) {
     const [visible, setVisible] = useState(false);
     const id = useId();

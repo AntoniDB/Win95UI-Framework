@@ -1,6 +1,6 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { createContext, useMemo } from 'react';
-import { defaultTheme, mergeTheme, themeToCssVars } from './theme';
+import { defaultTheme, mergeTheme, themeToCssVars } from './theme.js';
 export const ThemeContext = createContext(defaultTheme);
 export function ThemeProvider({ theme, children, className, style }) {
     const merged = useMemo(() => mergeTheme(theme), [theme]);

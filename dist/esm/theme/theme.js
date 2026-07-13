@@ -1,4 +1,4 @@
-import { colors, typography, spacing } from '../tokens';
+import { colors, typography, spacing } from '../tokens/index.js';
 export const defaultTheme = { colors, typography, spacing };
 export function mergeTheme(override) {
     if (!override)

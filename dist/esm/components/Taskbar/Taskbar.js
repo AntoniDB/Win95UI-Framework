@@ -1,8 +1,8 @@
 import { jsxs as _jsxs, jsx as _jsx } from "react/jsx-runtime";
 import { forwardRef, useEffect, useState } from 'react';
-import { Button } from '../Button';
-import { cx } from '../../utils';
-import { taskbarClasses as c } from './Taskbar.styles';
+import { Button } from '../Button/index.js';
+import { cx } from '../../utils.js';
+import { taskbarClasses as c } from './Taskbar.styles.js';
 function Clock() {
     const [now, setNow] = useState(() => new Date());
     useEffect(() => {

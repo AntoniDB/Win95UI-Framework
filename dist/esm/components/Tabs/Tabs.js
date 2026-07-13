@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useId, useRef, useState } from 'react';
-import { cx } from '../../utils';
-import { tabsClasses as c } from './Tabs.styles';
+import { cx } from '../../utils.js';
+import { tabsClasses as c } from './Tabs.styles.js';
 export const Tabs = forwardRef(function Tabs({ tabs, value, defaultValue, onChange, className, ...rest }, ref) {
     const [internal, setInternal] = useState(defaultValue ?? tabs[0]?.id ?? '');
     const selected = value ?? internal;

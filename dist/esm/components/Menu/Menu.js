@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useState } from 'react';
-import { cx } from '../../utils';
-import { menuClasses as c } from './Menu.styles';
+import { cx } from '../../utils.js';
+import { menuClasses as c } from './Menu.styles.js';
 function MenuItemRow({ entry, onLeafSelect, }) {
     const [open, setOpen] = useState(false);
     if (entry.separator)
