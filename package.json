@@ -1,6 +1,6 @@
 {
   "name": "win95ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Windows 95 styled React component framework with MUI-like depth",
   "license": "MIT",
   "type": "module",
