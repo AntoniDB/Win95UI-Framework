@@ -1,6 +1,6 @@
 # win95ui
 
-A Windows 95-inspired UI component library for React.
+A Windows 95-inspired UI component library for React. https://win95ui.vercel.app/
 
 ![npm](https://img.shields.io/npm/v/win95ui)
 ![license](https://img.shields.io/npm/l/win95ui)
