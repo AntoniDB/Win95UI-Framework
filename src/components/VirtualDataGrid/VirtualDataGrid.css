@@ -1,0 +1,4 @@
+.w95-vdatagrid__table { table-layout: fixed; }
+.w95-vdatagrid__td { padding-top: 0; padding-bottom: 0; overflow: hidden; }
+.w95-vdatagrid__cell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.w95-vdatagrid__spacer td { padding: 0; border: 0; }

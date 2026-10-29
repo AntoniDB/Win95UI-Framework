@@ -695,6 +695,12 @@
 .w95-tree__row:focus-visible { outline: 1px dotted var(--w95-black); }
 
 
+.w95-vdatagrid__table { table-layout: fixed; }
+.w95-vdatagrid__td { padding-top: 0; padding-bottom: 0; overflow: hidden; }
+.w95-vdatagrid__cell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.w95-vdatagrid__spacer td { padding: 0; border: 0; }
+
+
 .w95-window {
   background: var(--w95-silver);
   padding: 3px;

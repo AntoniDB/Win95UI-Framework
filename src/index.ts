@@ -24,6 +24,7 @@ export * from './components/Icon';
 export * from './components/Taskbar';
 export * from './components/StartMenu';
 export * from './components/DataGrid';
+export * from './components/VirtualDataGrid';
 export * from './components/StatusBar';
 export * from './components/HourglassCursor';
 export * from './components/GroupBox';

@@ -41,6 +41,7 @@ __exportStar(require("./components/Icon"), exports);
 __exportStar(require("./components/Taskbar"), exports);
 __exportStar(require("./components/StartMenu"), exports);
 __exportStar(require("./components/DataGrid"), exports);
+__exportStar(require("./components/VirtualDataGrid"), exports);
 __exportStar(require("./components/StatusBar"), exports);
 __exportStar(require("./components/HourglassCursor"), exports);
 __exportStar(require("./components/GroupBox"), exports);
