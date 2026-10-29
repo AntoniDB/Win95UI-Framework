@@ -34,7 +34,43 @@ function App() {
 }
 ```
 
-## Components (23)
+### Large datasets: VirtualDataGrid
+
+`VirtualDataGrid` takes the same columns as `DataGrid`, but only renders the rows that are visible, so it stays fast with hundreds of thousands of rows. It needs a fixed `height`; every row has the same `rowHeight` (default 22px) and taller cell content is clipped.
+
+```jsx
+import { useState } from 'react';
+import { VirtualDataGrid } from 'win95ui';
+
+const rows = Array.from({ length: 100000 }, (_, i) => ({
+  id: String(i),
+  name: `File ${i}.txt`,
+  size: (i * 7919) % 100000,
+}));
+
+const columns = [
+  { key: 'name', header: 'Name', accessor: (row) => row.name },
+  { key: 'size', header: 'Size (KB)', accessor: (row) => row.size, width: 120 },
+];
+
+function FileList() {
+  const [selected, setSelected] = useState();
+  return (
+    <VirtualDataGrid
+      columns={columns}
+      rows={rows}
+      rowKey={(row) => row.id}
+      height={400}
+      selectedKey={selected}
+      onRowClick={(row) => setSelected(row.id)}
+    />
+  );
+}
+```
+
+Optional props: `rowHeight` (default `22`) and `overscan`, the extra rows rendered above and below the visible area (default `8`). Click a column header, or press Enter/Space on it, to sort.
+
+## Components (25)
 
 | Category | Components |
 |----------|-----------|
