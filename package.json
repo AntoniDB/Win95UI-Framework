@@ -28,7 +28,7 @@
     "*.css"
   ],
   "scripts": {
-    "build": "npm run build:esm && npm run build:cjs && node scripts/fix-esm-extensions.mjs && node scripts/build-css.mjs",
+    "build": "npm run build:esm && npm run build:cjs && node scripts/write-cjs-package-json.mjs && node scripts/fix-esm-extensions.mjs && node scripts/build-css.mjs",
     "build:esm": "tsc -p tsconfig.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "typecheck": "tsc -p tsconfig.json --noEmit"
