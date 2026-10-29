@@ -41,7 +41,7 @@ function App() {
 | **Inputs** | Button, TextField, Checkbox, Radio, Select, Slider, Switch |
 | **Layout** | Window, Tabs, GroupBox, StatusBar, Taskbar |
 | **Navigation** | Menu, MenuBar, StartMenu, TreeView |
-| **Data** | ListView, DataGrid |
+| **Data** | ListView, DataGrid, VirtualDataGrid |
 | **Feedback** | MessageBox, ProgressBar, Tooltip, Badge, HourglassCursor |
 | **Display** | Icon |
 

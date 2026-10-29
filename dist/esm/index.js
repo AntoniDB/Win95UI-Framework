@@ -23,6 +23,7 @@ export * from './components/Icon/index.js';
 export * from './components/Taskbar/index.js';
 export * from './components/StartMenu/index.js';
 export * from './components/DataGrid/index.js';
+export * from './components/VirtualDataGrid/index.js';
 export * from './components/StatusBar/index.js';
 export * from './components/HourglassCursor/index.js';
 export * from './components/GroupBox/index.js';
